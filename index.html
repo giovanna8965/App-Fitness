@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <p class="logo"><a href="#">Fitness-App</a></p>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#Home" class="active">Ínicio</a></li>
+                <li><a href="#search">Procurar</a></li>
+                <li><a href="#exercises">Exercícios</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#github"><img src="img/github.png" alt="GitHub"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider" id="Home">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./img/weight-lifting-1284616_1920.jpg" alt="Weight lifting">
+                </div>
+                <div class="slide">
+                    <img src="./img/resist.png" alt="Resistance Training">
+                </div>
+                <div class="slide">
+                    <img src="./img/chris-heria.jpg" alt="Calisthenics">
+                </div>
+                <div class="slide">
+                    <img src="./img/men-yoga.jpg" alt="Yoga">
+                </div>
+                <div class="slide">
+                    <img src="./img/treadmill.jpg" alt="Treadmill">
+                </div>
+                <div class="slide">
+                    <img src="./img/swimming.jpg" alt="Swimming">
+                </div>
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">❮</button>
+            <button class="next" onclick="plusSlides(1)">❯</button>
+            <div class="caption" id="caption"></div>
+        </section>
+
+        <section class="thumbnails">
+            <div class="thumbnail" onclick="currentSlide(1)">
+                <img src="./img/bells.jpg" alt="Weight Training">
+            </div>
+            <div class="thumbnail" onclick="currentSlide(2)">
+                <img src="./img/resistband.jpg" alt="Resistance Bands">
+            </div>
+            <div class="thumbnail" onclick="currentSlide(3)">
+                <img src="./img/pullup.jpg" alt="Pull-ups">
+            </div>
+            <div class="thumbnail" onclick="currentSlide(4)">
+                <img src="./img/yg.jpg" alt="Yoga">
+            </div>
+            <div class="thumbnail" onclick="currentSlide(5)">
+                <img src="./img/walk.jpg" alt="Walking">
+            </div>
+            <div class="thumbnail" onclick="currentSlide(6)">
+                <img src="./img/cycle.jpg" alt="Cycling">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Fitness-App &copy; 2024</p>
+        <ul>
+            <li><a href="#Home">Ínicio</a></li>
+            <li><a href="#search">Procurar</a></li>
+            <li><a href="#exercises">Exercícios</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </footer>
+
+    <script src="slider.js"></script>
+</body>
+</html>
